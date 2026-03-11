@@ -1,0 +1,13 @@
+SEGELI
+Sistema de gestion de inventario
+
+Funcionalidades iniciales
+- Registro de productos
+- Recepcion de mercancia
+- Control de inventario
+- registro de ventas
+- anular ventas
+- consultas por fechas
+
+Base de datos: MySQL
+Aplicacion de escritorio

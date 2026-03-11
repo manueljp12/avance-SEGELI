@@ -1,0 +1,15 @@
+1. iniciar sesion
+* valida que tanto usuario como contraseña sean correctos
+de lo contrario no permite el acceso
+
+2. confirmar ventas
+* descuentas los productos vendidos del stock
+
+3. confirmar recepcion
+* incrementa el stock de cada producto
+
+4. cancelar operacion
+* cancela cualquier proceso ya sea en recepcion o en venta
+
+5. cerrar sesion
+* regresa a la pantalla login

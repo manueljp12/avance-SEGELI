@@ -1,0 +1,4 @@
+recepcionar mercancia
+realizar ventas
+realizar actualizacion del stock al recibir o vender mercancia
+realizar reportes diarios o por fechas

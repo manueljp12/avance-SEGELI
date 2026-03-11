@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEGELI | Panel Principal</title>
+  <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+  <div class="layout">
+     <header class="container-user">
+        <div>
+          <span class="usuarioLogin" id="usuarioLogin"></span>
+          <button class="btnLogoutLogin"  id="btnLogout">Salir</button>
+        </div>
+      </header>
+    <aside class="sidebar">
+      <h2>SEGELI</h2>
+      <ul>
+        <li><button data-view="home" onclick="loadView('home')">🏠 Home</button></li>
+        <li><button data-view="inventario" onclick="loadView('inventario')">📦 Inventario</button></li>
+        <li><button data-view="recepcion" onclick="loadView('recepcion')">📥 Recepción</button></li>
+        <li><button data-view="ventas" onclick="loadView('ventas')">💰 Ventas</button></li>
+        <li><button data-view="devoluciones" onclick="loadView('devoluciones')">↩️ Devoluciones</button></li>
+        <li><button data-view="reportes" onclick="loadView('reportes')">📊 Reportes</button></li>
+        <li><button data-view="usuarios" onclick="loadView('usuarios')">👤 Gestión de usuarios</button></li>
+      </ul>
+    </aside>
+
+    <main id="content"></main>
+  </div>
+
+  <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script type="module" src="./layout.js"></script>
+</body>
+</html>
+  

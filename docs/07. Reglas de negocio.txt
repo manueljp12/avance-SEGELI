@@ -1,0 +1,7 @@
+* no se puede vender si no hay stock
+* no se puede recepcionar cantidad negativa
+* un producto no puede tener precio negativo
+* toda venta debe tener al menos un productos
+* al realizar venta, disminuir el stock
+* al realizar una anulacion de la venta, se aumenta el stcok
+* al realizar recepcion, aumentar el stock

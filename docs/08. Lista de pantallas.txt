@@ -1,0 +1,38 @@
+*PANTALLAS*
+
+1. login
+2. menu prinpicpal
+3. inventarios
+4. recepcion de mercancia
+5. ventas
+6. reportes
+7. gestion de usuarios (solo admin)
+
+¿Que hace cada pantalla?
+
+1. login
+Pide usuario y contraseña
+
+2. menu principal
+mostrara menu de opciones(inventario, recepcion, ventas, reportes, gestion de usuarios(solo para admin))
+
+3.inventario
+mostrara todos los productos(nombre, stock, precios, fecha vencimiento (si aplica))
+
+4. recepcion de mercancia
+recepcionar productos
+
+5. ventas
+realizar ventas y anulaciones
+
+6. reportes
+consultar historial por fecha
+
+7. gestion de usuarios
+agregar nuevo usuario
+eliminar usuario
+actualizar usuario
+
+agregar rol
+actualizar rol
+eliminar rol

@@ -1,0 +1,6 @@
+01. VENDEDOR
+	*  Acceso: solo a ventas, reportes y recepcion
+	* Acceso limitado: inventario pero no podra modificar o eliminar nada
+
+02. ADMINISTRADOR
+	* Acceso total al software

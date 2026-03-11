@@ -1,0 +1,17 @@
+1. UI (Interfaz)
+	* pantallas
+	* botones
+	* formularios
+
+2. Controladores/Servicios
+	* logica delnegocio
+	* validaciones
+	* reglas definidas
+
+3. Acceso a datos
+	* comunicacion con MySQL
+	* consultas, inserciones, actualizaciones
+
+4. configuracion
+	* conexion a BD
+	* variables del sistema

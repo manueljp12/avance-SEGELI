@@ -1,0 +1,164 @@
+:root{
+    --radio: 8px;
+    --color-primario:white;
+    --color-secundario:rgba(0, 0, 0, 0.822);
+    --input-seleccionado:4px solid rgb(14, 168, 14);
+    --color-terciario:rgba(0, 0, 0, 0.35);
+    --color-cuarto:rgba(255, 255, 255, 0.671);
+}
+
+.title-reception{
+    text-align: center;
+    color: var(--color-primario);
+}
+.detalles{
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(2px);
+}
+
+.buscadorRecepcion{
+    text-align: center;
+    padding-top: 35px;
+}
+
+.buscador-recepcion{
+    text-align: center;
+    width:500px ;
+    height: 30px;
+    border-radius: var(--radio);
+    background-color: var(--color-terciario);
+    border: none;
+    outline: none;
+    color: var(--color-cuarto);
+    font-weight: bold;
+    font-size: large;
+    transition: 0.4s;
+}
+
+.buscador-recepcion::placeholder{
+    color: #fffefe65;
+}
+.buscador-recepcion:focus{
+    border-bottom: var(--input-seleccionado);
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-primario);
+}
+
+.productos-reception{
+    color: rgba(0, 0, 0, 0.712);
+    font-weight: bold;
+}
+.productos-reception:hover{
+    background-color:rgba(255, 255, 255, 0.918) ;
+    border: 1px solid black;
+}
+.productosRecepcion{
+    background: var(--color-cuarto);
+    width: 250px;
+    border-radius: 3px;
+}
+
+.cantidad-reception,
+.precio-factura{
+    width: 150px;
+    height: 20px;
+    padding: 5px 15px;
+    font-size: larger;
+    border-radius: var(--radio);
+    border: none;
+    outline: none; 
+    transition: 0.5s;
+}
+.cantidad-reception:focus,
+.precio-factura:focus{
+    border:1.5px solid rgb(14, 168, 14);
+}
+
+.datosRecepcion{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.option-reception{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-agregar{
+    border-radius: var(--radio);
+    border: var(--borde);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight:bold;
+    background:#4d8f4b;
+    color: var(--color-primario);
+}
+
+.btn-agregar:hover{
+    background:#00f514;
+    color:rgba(24, 24, 24, 0.747);
+}
+
+.tabla-recepcion{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabla-recepcion thead{
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.tablaRecepcion{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#tablaRecepcion{
+    background: var(--color-cuarto);
+}
+
+.tabla-recepcion td{
+    padding: 10px 0px;
+}
+
+#tablaRecepcion tr{
+    border-bottom: 1px solid var(--color-terciario);
+    
+}
+
+.observacion-guardar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#observacion{
+    border: none;
+    outline: var(--outline);
+    border-radius: var(--radio);
+    height: 50px;
+}
+
+#observacion:focus{
+    border-bottom: var(--input-seleccionado);
+}
+
+
+.btn-guardar{
+    border-radius: var(--radio);
+    background:#4d8f4b;
+    color: var(--color-primario);
+    cursor: pointer;
+    border: var(--borde);
+    padding: 5px 5px;
+    font-weight: bold;
+}
+.btn-guardar:hover{
+    background:#00f514;
+    color:rgba(24, 24, 24, 0.747);
+}

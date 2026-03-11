@@ -1,0 +1,189 @@
+:root{
+    --radio: 8px;
+    --color-primario:white;
+    --color-secundario:rgba(0, 0, 0, 0.822);
+    --input-seleccionado:4px solid rgb(14, 168, 14);
+    --color-terciario:rgba(0, 0, 0, 0.35);
+    --color-cuarto:rgba(255, 255, 255, 0.671);
+
+}
+
+.ventas-container{
+    width: 100%;
+}
+
+.title-container{
+    text-align: center;
+    color: var(--color-primario);
+}
+
+.detalles-venta{
+    backdrop-filter: blur(2px);
+}
+
+.buscadorVentas{
+    text-align: center;
+    padding-top: 35px;
+}
+
+.buscador-producto{
+    text-align: center;
+    width: min(500px, 100%);
+    height: 30px;
+    border-radius: var(--radio);
+    background-color: var(--color-terciario);
+    border: none;
+    outline: none;
+    color: var(--color-cuarto);
+    font-weight: bold;
+    font-size: large;
+    transition: 0.4s;
+}
+
+.buscador-producto::placeholder{
+    color: #fffefe65;
+}
+
+.buscador-producto:focus{
+    border-bottom: var(--input-seleccionado);
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-primario);
+    outline-color: rgba(14, 168, 14, 0.55);
+}
+
+.select-producto{
+    background: var(--color-cuarto);
+    width: min(250px, 100%);
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.lista-productos{
+    color: rgba(0, 0, 0, 0.712);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lista-productos:hover{
+    background-color:rgba(255, 255, 255, 0.918);
+    border: 1px solid black;
+}
+
+.opciones-ventas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.datos-venta{
+    display: flex;
+    gap: 20px;
+}
+
+.cantidad-venta,
+.precio-venta{
+    width: min(150px, 100%);
+    height: 20px;
+    padding: 5px 15px;
+    font-size: larger;
+    border-radius: var(--radio);
+    border: var(--borde);
+    outline: none;
+    transition: 0.5s;
+}
+
+.cantidad-venta:focus,
+.precio-venta:focus{
+    border: 1.5px solid rgb(14, 168, 14);
+    outline-color: rgba(14, 168, 14, 0.55);
+}
+
+.btn-agregar-venta{
+    border-radius: var(--radio);
+    border: var(--borde);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight:bold;
+    background:#4d8f4b;
+    color: var(--color-primario);
+}
+
+.btn-agregar-venta:hover{
+    background:#00f514;
+    color:rgba(24, 24, 24, 0.747);
+}
+
+.tabla-ventas{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-ventas thead{
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.tabla-ventas td{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#tablaVentas{
+    background: var(--color-cuarto);
+}
+
+#tablaVentas tr{
+    border-bottom: 1px solid var(--color-terciario);
+}
+
+.Total{
+    text-align: center;
+    color: var(--color-primario);
+    margin: 10px 0;
+}
+
+#observacion{
+    display: block;
+    width: min(420px, 100%);
+    height: 50px;
+    margin: 0 auto 10px;
+    border: none;
+    outline: none;
+    border-radius: var(--radio);
+}
+
+#observacion:focus{
+    border-bottom: var(--input-seleccionado);
+    outline-color: rgba(14, 168, 14, 0.55);
+}
+
+#btnGuardarVentas{
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--radio);
+    background:#4d8f4b;
+    color: var(--color-primario);
+    cursor: pointer;
+    border: var(--borde);
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+#btnGuardarVentas:hover{
+    background:#00f514;
+    color:rgba(24, 24, 24, 0.747);
+}
+
+@media (max-width: 640px){
+    .datos-venta{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cantidad-venta,
+    .precio-venta{
+        width: min(260px, 100%);
+    }
+}

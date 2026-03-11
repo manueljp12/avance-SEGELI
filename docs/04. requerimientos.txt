@@ -1,0 +1,53 @@
+1.	Requisitos del Sistema 
+1.1. Requisitos Funcionales
+Estos describen las funciones que el sistema debe realizar.
+1.1.1.	Autenticación de usuarios
+•	RF-01: El sistema debe permitir el inicio de sesión con usuario y contraseña.
+•	RF-02: El sistema debe validar las credenciales antes de permitir el acceso.
+•	RF-03: El sistema debe restringir el acceso según el rol del usuario (administrador, vendedor, auxiliar).
+•	RF-04: El sistema debe permitir el cierre de sesión de forma segura.
+1.1.2.	Gestión de mercancía
+•	RF-05: El sistema debe permitir registrar la recepción de nueva mercancía.
+•	RF-06: El sistema debe permitir consultar, agregar, editar y eliminar productos.
+•	RF-07: El sistema debe actualizar automáticamente el stock al registrar una venta o devolución.
+•	RF-08: El sistema debe generar alertas visuales para productos con stock bajo o agotado.
+1.1.3.	Ventas
+•	RF-09: El sistema debe permitir buscar productos por nombre o código.
+•	RF-10: El sistema debe calcular automáticamente el subtotal, los descuentos y el total de la venta.
+•	RF-11: El sistema debe verificar el stock disponible antes de confirmar la venta.
+•	RF-12: El sistema debe registrar la venta y actualizar el inventario.
+•	RF-13: El sistema debe permitir generar un comprobante digital o impreso (opcional).
+1.1.4.	Reportes
+•	RF-14: El sistema debe permitir generar reportes de inventario, ventas, alertas .
+•	RF-15: El sistema debe permitir aplicar filtros de búsqueda (fecha, usuario, tipo de reporte).
+•	RF-16: El sistema debe permitir exportar los reportes en formato PDF o Excel.
+1.1.5.	Gestión de usuarios
+•	RF-17: El sistema debe permitir crear, editar, eliminar y consultar usuarios.
+•	RF-18: El sistema debe asignar un rol a cada usuario con sus respectivos permisos.
+1.1.6.	Devoluciones
+•	RF-19: El sistema debe permitir registrar devoluciones de productos.
+•	RF-20: El sistema debe actualizar automáticamente el stock de los productos devueltos.
+
+
+
+
+
+
+1.2. Requisitos No Funcionales
+1.2.1.	Usabilidad
+•	RNF-01: La interfaz debe ser intuitiva, ordenada y fácil de utilizar por personal no técnico.
+•	RNF-02: Los mensajes de error y confirmación deben ser claros y comprensibles.
+1.2.2.	Rendimiento
+•	RNF-03: El sistema debe abrir y responder a las acciones del usuario en menos de 2 segundos.
+•	RNF-04: El sistema debe funcionar correctamente en equipos con al menos 4 GB de RAM y procesador dual-core.
+1.2.3.	 Seguridad
+•	RNF-05: Las contraseñas deben almacenarse cifradas en la base de datos.
+•	RNF-06: El acceso a funciones administrativas debe estar restringido a usuarios con rol de administrador.
+•	RNF-07: El sistema debe realizar copias de seguridad automáticas o manuales de la base de datos.
+1.2.4.	Mantenibilidad
+•	RNF-08: El código fuente debe estar documentado y estructurado para facilitar futuras actualizaciones.
+•	RNF-09: Las actualizaciones del software no deben alterar la base de datos existente.
+1.2.5.	Portabilidad y compatibilidad
+•	RNF-10: El sistema debe ejecutarse en sistemas operativos Windows 10 o superior.
+•	RNF-11: El sistema debe permitir instalación mediante un instalador ejecutable (.exe).
+•	RNF-12: El sistema debe funcionar sin conexión a Internet, utilizando una base de datos local.

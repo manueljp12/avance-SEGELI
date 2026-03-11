@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh; 
+  position: relative;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #163013;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #4d8f4b;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.sidebar button:hover {
+  background: #00f514;
+}
+
+#content {
+  flex: 1; /* ocupa todo el espacio restante */
+  background-image: url(../imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.container-user{
+  
+  display: flex;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 260px;
+  width: calc(100% - 260px);
+  justify-content: flex-end;
+  align-items: center ;
+  padding: 0 12px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.container-user .btnLogoutLogin{
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  background:#4d8f4b;
+  cursor: pointer;
+  font-weight: bold;
+ margin-left: 20px;
+}
+
+.container-user .btnLogoutLogin:hover{
+  background:#00f514;
+  color:rgba(82, 81, 81, 0.747);
+}
+.container-user .usuarioLogin{
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  background: rgb(255,255,255,0.15);
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}

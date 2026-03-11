@@ -1,0 +1,35 @@
+const {contextBridge, ipcRenderer} = require ('electron');
+
+contextBridge.exposeInMainWorld('api', {
+    login: (usuario, password) => ipcRenderer.invoke('login', usuario, password),
+    logout: () => ipcRenderer.invoke('logout'),
+    obtenerSesion: () => ipcRenderer.invoke('obtener-sesion'),
+    layoutObtenerVistasPermitidas: () => ipcRenderer.invoke('layout:vistas-permitidas'),
+    layoutLoadView: (viewName) => ipcRenderer.invoke('layout:load-view', viewName),
+    obtenerDatosHome: () => ipcRenderer.invoke('home:datos'),
+    obtenerInventario: () => ipcRenderer.invoke('obtener-inventario'),
+    agregarProducto: (data) => ipcRenderer.invoke('producto:agregar', data),
+    editarProducto: (data) => ipcRenderer.invoke('producto:editar', data),
+    eliminarProducto: (id) => ipcRenderer.invoke('producto:eliminar', id),
+    obtenerCategorias: () => ipcRenderer.invoke('categoria:obtener'),
+    agregarCategoria: (data) => ipcRenderer.invoke('categoria:agregar', data),
+    editarCategoria: (data) => ipcRenderer.invoke('categoria:editar', data),
+    eliminarCategoria: (id) => ipcRenderer.invoke('categoria:eliminar', id),
+    guardarRecepcion: (data) => ipcRenderer.invoke('recepcion:guardar', data),
+    buscarProductos: (texto) => ipcRenderer.invoke('productos:buscar', texto),
+    guardarVenta: (data) => ipcRenderer.invoke('venta:guardar', data),
+    buscarProductosVentas: (texto) => ipcRenderer.invoke('ventas:buscar', texto),
+    generarReporte: (data) => ipcRenderer.invoke('reportes:generar', data),
+    obtenerUsuarios: () => ipcRenderer.invoke('reportes:usuarios'),
+    obtenerCategoriasReporte: () => ipcRenderer.invoke('reportes:categorias'),
+    // Usuarios
+    usuariosObtener: () => ipcRenderer.invoke('usuarios:obtener'),
+    usuariosCrear: (data) => ipcRenderer.invoke('usuarios:crear', data),
+    usuariosEditar: (data) => ipcRenderer.invoke('usuarios:editar', data),
+    usuariosEliminar: (id) => ipcRenderer.invoke('usuarios:eliminar', id),
+    usuariosRoles: () => ipcRenderer.invoke('usuarios:roles'),
+    // Devoluciones
+    devolucionGuardar: (data) => ipcRenderer.invoke('devolucion:guardar', data),
+    devolucionObtener: () => ipcRenderer.invoke('devolucion:obtener'),
+    devolucionProductosVenta: (idVenta) => ipcRenderer.invoke('devolucion:productosVenta', idVenta),
+});

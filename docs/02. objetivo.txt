@@ -1,0 +1,7 @@
+crear un software para optimizar el trabajo actual 
+
+crear un software que permita
+* realizar recepcion de mercancia
+* realizar ventas
+* realizar auditoria
+* realizar reportes filtrados por fecha

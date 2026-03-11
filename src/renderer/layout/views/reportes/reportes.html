@@ -1,0 +1,99 @@
+<div class="container-reportes" >
+    <header class="title-reportes">
+        <h1>📊 Reportes del Sistema</h1>
+        <p>Consulta y analisis de informacion</p>
+    </header>
+
+<!-- Panel de selección -->
+    <section class="panel-seleccion">
+        <div class="campo">
+            <label for="categoriaReporte">Categoria de Reportes</label>
+            <select id="categoriaReporte">
+                <option value="">-- Seleccione --</option>
+                <option value="inventario">Inventario</option>
+                <option value="recepcion">Recepción</option>
+                <option value="ventas">Ventas</option>
+                <option value="usuarios">Usuarios</option>
+            </select>
+        </div>
+
+        <div class="campoTipo">
+            <label for="tipoReporte">Tipo de Reporte</label>
+            <select id="tipoReporte" disabled>
+                <option value="">-- Seleccione categoria primero --</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Panel de filtros -->
+
+    <section class="panel-filtros">
+        <h3>Filtros</h3>
+
+        <div class="filtros">
+            <!-- Fechas -->
+             <div class="filtro-fecha">
+                <label for="fechaInicio">Fecha inicio</label>
+                <input type="date" id="fechaInicio" />
+             </div>
+
+             <div class="filtro-fecha">
+                <label for="fechaFin">Fecha fin</label>
+                <input type="date" id="fechaFin">
+             </div>
+
+             <!--Usuario -->
+             <div class="filtro-usuario">
+                <label for="usuario">Usuario </label>
+                <select id="usuario">
+                    <option value="">-- Todos --</option>
+                </select>
+             </div>
+
+             <!-- Categoria -->
+             <div class="filtro-categoria">
+                <label for="categoria">Categoria</label>
+                <select id="categoria">
+                    <option value="">-- Todas --</option>
+                </select>
+             </div>
+
+             <!--Stock minimo-->
+             <div class="filtro-stock">
+                <label for="stockMinimo">Stock Minimo</label>
+                <input type="number" id="stockMinimo" min="0">
+             </div>
+
+             <div class="campo-boton" >
+                <button id="btnGenerarReporte" >Generar reporte</button>
+             </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+     <section class="panel-resultados">
+        <div class="resultados-header">
+            <h3>Resultados</h3>
+            <div class="export-buttons" id="exportButtons">
+                <button id="btnExportExcel" class="btn-export btn-excel">📊 Excel</button>
+                <button id="btnExportPDF" class="btn-export btn-pdf">📄 PDF</button>
+            </div>
+        </div>
+
+        <table class="tabla-resultados">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="sin-datos">Seleccione un reporte y genere resultados</td>
+                </tr>
+            </tbody>
+        </table>
+     </section>
+</div>

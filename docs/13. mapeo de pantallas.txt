@@ -1,0 +1,23 @@
+1. Login
+  * servicio: ingreso de usuario
+  * tablas que afecta: usuarios, roles
+  * regla: no acceder sin validar usuario y confirmar que ya este registrado
+
+2. Recepcion
+  * servicio: recepcionar mercancia
+  * tablas afectadas: recepcion, recepcion_detalle, productos
+  * regla: no recepcionar si no hay al menos un producto, no recepcionar cantidad negativa
+
+3. venta
+  * servicio: ventas
+  * tablas afectadas: ventas, productos
+  * regla: no vender sin stock
+
+4. reportes
+  * servicio: sacar inventario y reportes filtrados por fecha
+  * tablas afectadas: ninguna
+  
+5. gestion de usuarios
+  * servicio: gestionar usuarios
+  * tablas afectadas: roles y usuarios
+  * regla: solo puede tener acceso a esta opcion el administrador
