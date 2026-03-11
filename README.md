@@ -2,7 +2,7 @@
 
 Sistema de gestión de inventario desarrollado con Electron, Node.js y MySQL.
 
-#Tecnologias usadas
+# Tecnologias usadas
 
 - Electron
 - Node.js
