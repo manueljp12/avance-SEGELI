@@ -155,3 +155,14 @@ CREATE TABLE IF NOT EXISTS devolucion_detalle (
     FOREIGN KEY (idDevolucion) REFERENCES devoluciones(idDevolucion),
     FOREIGN KEY (idProducto) REFERENCES productos(idProducto)
 );
+
+-- USUARIO PRUEBA
+INSERT INTO roles (tipo, descripcion)
+VALUES ("Administrador", "Usuario con acceso completo al sistema");
+
+INSERT INTO categoria (nombreCategoria, descripcion)
+VALUES ("General", "Categoría inicial del sistema");
+
+INSERT INTO usuarios (usuario, password, cedula, nombres, apellidos, idRol)
+VALUES ("admin", "$10$ImfC0HEZZivRBQFYxUjtaOiltehZFx4tkRFP3NuBIpQmXDRb7ero2", "1234567891", "Administrador", "Sistema", 1);
+
