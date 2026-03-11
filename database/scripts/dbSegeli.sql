@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS devolucion_detalle (
     FOREIGN KEY (idProducto) REFERENCES productos(idProducto)
 );
 
--- USUARIO PRUEBA
+-- USUARIOS PRUEBA
 INSERT INTO roles (tipo, descripcion) VALUES
 ("Administrador", "Usuario con acceso completo al sistema"),
 ("Vendedor", "Usuario con acceso solo a ventas, reportes y devoluciones");
